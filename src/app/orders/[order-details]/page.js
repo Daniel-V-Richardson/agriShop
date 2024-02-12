@@ -51,7 +51,7 @@ export default function OrderDetails() {
   }
 
   return (
-    <div className="py-14 px-4 md:px-6">
+    <div className="py-14 px-4 md:px-6 text-black">
       <div className="flex justify-start items-start space-y-2 flex-col">
         <h1 className="text-3xl lg:text-4xl font-bold leading-7 lg:leading-9 text-gray-900">
           Order #{orderDetails && orderDetails._id}
@@ -164,7 +164,7 @@ export default function OrderDetails() {
           </div>
           <button
             onClick={() => router.push(`/`)}
-            className="mt-5 mr-5  inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide"
+            className="mt-5 mr-5  inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide rounded-lg"
           >
             Shop Again
           </button>

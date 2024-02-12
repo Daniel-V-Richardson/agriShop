@@ -101,7 +101,7 @@ export default function Login() {
                 <button
                   className="disabled:opacity-50 inline-flex w-full items-center justify-center bg-black px-6 py-4 text-lg 
                      text-white transition-all duration-200 ease-in-out focus:shadow font-medium uppercase tracking-wide
-                     "
+                     rounded-lg"
                   disabled={!isValidForm()}
                   onClick={handleLogin}
                 >
@@ -122,7 +122,7 @@ export default function Login() {
                   <button
                     className="inline-flex w-full items-center justify-center bg-black px-6 py-4 text-lg 
                      text-white transition-all duration-200 ease-in-out focus:shadow font-medium uppercase tracking-wide
-                     "
+                     rounded-lg"
                     onClick={() => router.push("/register")}
                   >
                     Register

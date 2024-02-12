@@ -83,7 +83,7 @@ export default function AdminView() {
                       className="bg-gray-200 shadow p-5 flex flex-col space-y-3 py-6 text-left"
                     >
                       <div className="flex">
-                        <h1 className="font-bold text-lg mb-3 flex-1">
+                        <h1 className="font-bold text-lg mb-3 flex-1 text-black">
                           #order: {item._id}
                         </h1>
                         <div className="flex flex-col gap-2">
@@ -129,7 +129,7 @@ export default function AdminView() {
                         ))}
                       </div>
                       <div className="flex gap-5">
-                        <button className="disabled:opacity-50 mt-5 mr-5  inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide">
+                        <button className="disabled:opacity-50 mt-5 mr-5  inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide rounded-lg">
                           {item.isProcessing
                             ? "Order is Processing"
                             : "Order is delivered"}
@@ -137,7 +137,7 @@ export default function AdminView() {
                         <button
                           onClick={() => handleUpdateOrderStatus(item)}
                           disabled={!item.isProcessing}
-                          className="disabled:opacity-50 mt-5 mr-5  inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide"
+                          className="disabled:opacity-50 mt-5 mr-5  inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide rounded-lg"
                         >
                           {componentLevelLoader &&
                           componentLevelLoader.loading &&

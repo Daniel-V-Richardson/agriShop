@@ -29,7 +29,7 @@ export default function Checkout() {
   const params = useSearchParams();
 
   const publishableKey =
-    "pk_test_51NMv6ZSC6E6fnyMeRIEb9oEXdGRCC9yrBTT4xWHgcjWOuFcqFiAHErvaS50K1hl5t5WJXVGfLLWxvb705IWJhA3300yCcrMnlM";
+    "pk_test_51NYOBASFLTbEYLqB7EbrFkXKFAu2PwVyNZhYDozkkh4XWhMtu8Z6EYEOKgybOFRVT1LGglD7UwUKwlUvg18fMy29000gwrjjbt";
   const stripePromise = loadStripe(publishableKey);
 
   console.log(cartItems);
@@ -129,7 +129,7 @@ export default function Checkout() {
 
     const createLineItems = cartItems.map((item) => ({
       price_data: {
-        currency: "usd",
+        currency: "inr",
         product_data: {
           images: [item.productID.imageUrl],
           name: item.productID.name,
